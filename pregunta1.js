@@ -4,7 +4,17 @@
  */
 
  const even = function(numbers){
-    return numbers.filter(num => num % 2 === 0);
+    //console.log(numbers);
+    //return numbers.filter(num => num % 2 == 0);
+
+    console.log(numbers);
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element%2 == 1) {numbers.splice(i, 1);}
+        
+    }
+    console.log(numbers);
+    return numbers;
 }
 
 const odd = function(numbers){
